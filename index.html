@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="firebase-app.js"></script>
+<script src="firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA6v-PorMCWmXV67Q12Su7rgskPv6P36pQ",
+    authDomain: "car-race-dfab0.firebaseapp.com",
+    databaseURL: "https://car-race-dfab0.firebaseio.com",
+    projectId: "car-race-dfab0",
+    storageBucket: "car-race-dfab0.appspot.com",
+    messagingSenderId: "863907369659",
+    appId: "1:863907369659:web:cc9a99de82b8f8e8640f9e"
+  };
+ 
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <script src="Player.js"></script>
+    <script src="Form.js"></script>
+    <script src="Game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
